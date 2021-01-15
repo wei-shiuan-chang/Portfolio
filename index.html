@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/png" href="img/icon/laptop.png">
+
+	<title>WSChang</title>
+
+
+	
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+
+	<div id="slides">
+		<div class="overlay"></div>
+
+    <div class="myVideo">
+    <!--<video autoplay muted loop src="img/bgvideo.mp4" >
+    -->
+    <img id="first-back" src="img/slide3.jpeg" opacity: 0.5>
+      
+    </div> 
+		
+
+		<div class="titleMessage">
+			<div class="heading">
+				<p class="main">Wei-Shiuan Chang</p>
+				<p class="sub">Vanessa</p>
+				<img class="pic" src="img/littleHead.jpeg">
+			</div>
+			
+
+		</div>
+		
+		<div class="quoteMessage">
+			
+			<p class="main typed"></p>
+				
+		</div>
+
+		
+	</div>
+ 	
+ 	<label>
+	<input type='checkbox' id="hcheck">
+	<span class='menu'> <span class='hamburger'></span> </span>
+	<ul class='menuList'>
+	  <li> <a href='#'>Home</a> </li>
+	  <li> <a href='#what-we-do-section'>About</a> </li>
+	  <li> <a href='#resume-section'>Projects</a> </li>
+	  <li> <a href='#more'>More</a> </li>
+	</ul>
+	</label>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+	
+
+	
+	
+	<div class="site-section bg-light" id="what-we-do-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-12 section-title">
+            <h4>About me</h4>
+				<p>Hi there! I'm Wei-Shiuan Chang, you can just call me Vanessa. I am an adventurous and proactive person willing to try any activity. I am also proud of my ability to persevere and overcome challenges. Welcome to my personal website.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 ml-auto">
+            <div class="row">
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-4">
+                <div class="service h-100">
+                  <span class="icon-photo_album display-4 text-primary d-block mb-4"></span>
+                  <h3>Projects</h3>
+                  <p>"Try and fail, but never fail to try."</p>
+                  <p><a href="#proS" class="readmore">Learn more</a></p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-4">
+                <div class="service h-100">
+                  <span class="icon-photo_album display-4 text-primary d-block mb-4"></span>
+                  <h3>Education</h3>
+                  <p>"Teachers open the door, but you must enter by your self"</p>
+                  <p><a href="#eduS" class="readmore">Learn more</a></p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-4">
+                <div class="service h-100">
+                  <span class="icon-layers display-4 text-primary d-block mb-4"></span>
+                  <h3>Internships</h3>
+                  <p>Transferring the theory to practice and brought a fresh eyes to the workplace.</p>
+                  <p><a href="#intS" class="readmore">Learn more</a></p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-4">
+                <div class="service h-100">
+                  <span class="icon-laptop_mac display-4 text-primary d-block mb-4"></span>
+                  <h3>Activities</h3>
+                  <p>I have always participated in extracurricular activities. These non-academic experiences have given me appreciation for teamwork and time management.</p>
+                  <p><a href="#actS" class="readmore">Learn more</a></p>
+                </div>
+              </div>
+              
+    
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- END .site-section -->
+
+    
+
+
+    <div class="site-section" id="portfolio-section">
+      <div class="container">
+        
+        
+        <div class="row mb-5" id="proS">
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+            <h3 class="aboutHeader">Food Maps</h3>
+            
+            <p class="mb-4">(In progress)</br>Keep every restaurant you want to try on the maps and build a platform for owners and clients.
+            	<UL>
+              
+              <LI>Created an <u>API</u> to build a map section saving the users’ food maps with pins on them.</LI>
+              <LI>Built front-end using <u>ReactJS</u> and back-end using <u>NodeJS</u>.</LI>
+              <LI>Let users (clients and hosts) communicate by a TCP chat application.</LI>
+                
+              
+              </UL>
+            </p>
+
+            <h3 class="aboutHeader">Personal working place</h3>
+            <p class="mb-4">(Currently being integrated)</br>Collaborative platform for software engineers doing their routine tasks.
+            	<UL>
+              
+              <LI>Build a Weather application by <u>PHP</u> and <u>API</u> to search for the weather. </LI>
+              <LI>Have a game to test your reaction time by <u>JavaScript</u>.</LI>
+              <LI>Implement JavaScript library-<u>jQuery</u> to build a Code display panel is to test your JavaScript, CSS or HTML online.</LI>
+              <LI>Make a to-do list with <u>MySQL</u> to save the tasks the user needs to finish.</LI>
+                
+              
+              </UL>
+            </p>
+
+            <h3 class="aboutHeader">Formula One Challenge</h3>
+            
+            <p class="mb-4">An Android application in the Java programming language to determine your exact level of F1 fandom.
+            	<UL>
+              
+              <LI>Using appropriate Activity lifecycle callbacks to set different timers.</LI>
+              <LI>Indicate the timer expired by showing a toast and sending a notification.</LI>
+                
+                
+              
+              </UL>
+            </p>
+
+            <h3 class="aboutHeader">Enrollment System</h3>
+            
+            <p class="mb-4">An application using by student and teacher to manage the schedule and course registration.
+            	<UL>
+              
+              <LI>Apply <u>Java</u> to build a window with user interface.</LI>
+              <LI>Implement <u>MySQL</u> to store the data of courses, teachers and students.</LI>
+                
+                
+                
+              
+              </UL>
+            </p>
+            
+          </div>
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="img/web1.png" alt="Image" class="img-fluid">
+            <img src="img/web2.png" alt="Image" class="img-fluid">
+            <img src="img/web3.png" alt="Image" class="img-fluid">
+            <img src="img/web4.png" alt="Image" class="img-fluid">
+            <!--<img src="img/grad2.jpeg" alt="Image" class="img-fluid">-->
+          </div>
+          
+        </div>
+
+
+
+
+
+        <div class="row mb-5" id="eduS">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="img/grad1.jpeg" alt="Image" class="img-fluid">
+            <!--<img src="img/grad2.jpeg" alt="Image" class="img-fluid">-->
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+            <h3 class="aboutHeader">Education</h3>
+            <p class="mb-4">2020/09-current<br /> <strong class="text-black">University of California, Irvine(UCI)</strong> Master of Software Engineering<br /> 
+            <p class="mb-4">2018/09-2020/08<br /> <strong class="text-black">National Taiwan University(NTU)</strong> MSc Mechanical Engineering, Design Division<br /> 
+              <UL>
+                <LI>Member of Mechanism and Machine Theory Research Lab. Assist with research involving automotive mechanism design and analysis. Use MATLAB for model evaluation and visualization.
+                <LI>Thesis project:<br /> Matching and Evaluation of Powertrains for Electric Buses. Goal is to develop a model for finding the most efficient combination of motor, transmission, and battery for electric public transit buses.
+                </UL>
+            </p>
+            <p class="mb-4">2014/09-2018/06<br /> <strong class="text-black">National Central University(NCU)</strong><br /> B.E. Mechanical Engineering</p>
+            
+          </div>
+        </div>
+
+        <div class="row mb-5" id="actS">
+          <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+            <img src="img/basketball1.jpeg" alt="Image" class="img-fluid">
+            <img src="img/basketball2.jpeg" alt="Image" class="img-fluid">
+            <img src="img/basketball3.jpeg" alt="Image" class="img-fluid">
+            <img src="img/basketball4.jpeg" alt="Image" class="img-fluid">
+            <img src="img/basketball5.jpeg" alt="Image" class="img-fluid">
+            <img src="img/basketball6.jpeg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
+            <h3>Varsity Basketball Teams</h3>
+            <p class="mb-4">I have experience playing on high school and university varsity basketball teams.<br /><br />In my junior year at Taiwan Central University I helped my team win second place in a national basketball competition, and consequently move up to the first level of the Taiwan University Basketball League.<br /><br />Furthermore, I was <strong class="text-black">team captain</strong> for a school department team, giving me <strong class="text-black">leadership</strong> experience in motivating a group of individuals to work as a unit. </p>
+            
+            
+            
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="img/music1.jpeg" alt="Image" class="img-fluid">
+            <img src="img/music2.jpeg" alt="Image" class="img-fluid">
+            <img src="img/music3.jpeg" alt="Image" class="img-fluid">
+            
+            
+            
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+            <h3>Concert Band</h3>
+            <p class="mb-4">My other passion is music, I have participated in large classical orchestras ever since I was 10 years old.<br />My main instrument is the saxophone, but I also practiced violin for ten years.<br /><br />
+            Music and sports are what I devote my spare time to pursue my interests. Unlike most teenagers, I practiced and was willing to pursue my potential and best performance after or before school hours. To prove myself in teams and balance my study, I need to take efforts to do right things at right time, <strong class="text-black">managing my schedule well and be patient when I face to tough time</strong>.<br /><br /> I always need to practice many hours for just a few second on stages and games. Many students decide to focus on their studies but I consider these experiences as best opportunities to <strong class="text-black">develop grit and shape myself as the person who is willing to take risk and stick to what seems difficult in my life</strong>. I would rather try and fail but not accept what seems accessible to me.
+			</p>
+
+            
+            
+          </div>
+        </div>
+
+        <div class="row mb-5" id="intS">
+          <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+            <img src="img/ford1.jpeg" alt="Image" class="img-fluid">
+            <img src="img/ford2.jpeg" alt="Image" class="img-fluid">
+            <img src="img/ford3.jpeg" alt="Image" class="img-fluid">
+            <img src="img/ford4.jpeg" alt="Image" class="img-fluid">
+            <img src="img/ford5.jpeg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
+            <h3>Ford Motor Company</h3>
+            <p class="mb-4">For my Ford Motor Company Taiwan internship I was assigned to a project involving <strong class="text-black">strategies for increasing employee engagement</strong>, a major factor in talent retention.<br /><br />I identified strategies, organized my findings, and presented data to the HR Director. I reviewed articles in business periodicals and used strategies from other firms as benchmarks when I interviewed Ford employees.<br /><br />It was a new experience because I had always looked at problems through an engineer's eyes. My tasks required strong interpersonal skills. Finally, I presented my results to the top manager of Taiwan Ford.</p>
+            
+            
+            
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="img/corn1.jpeg" alt="Image" class="img-fluid">
+            <img src="img/corn2.jpeg" alt="Image" class="img-fluid">
+            <img src="img/corn3.jpeg" alt="Image" class="img-fluid">
+            <img src="img/corn4.jpeg" alt="Image" class="img-fluid">
+            <img src="img/corn5.jpeg" alt="Image" class="img-fluid">
+            
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+            <h3>Corning Incorporated,<br />Asia Region</h3>
+            <p class="mb-4">Corning provides glass for LCD panels. For this internship I researched <strong class="text-black">glass-cutting tools that might do a better job within desired ranges at an acceptable cost</strong>.<br /><br />I met with tool suppliers to learn about new products, and looked for advantages under different conditions. I used a computer to learn tool configurations, and then got input from production line employees.<br /><br />This was my first experience balancing multiple factors involving product features and costs. I presented my findings to local managers from different departments and visiting managers from different countries.</p>
+            
+            
+          </div>
+        </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+	          	<div class="col-md-10 heading-section text-center ftco-animate fadeInUp ftco-animated">
+	          		<h1 class="big big-2">Experience</h1>
+	            
+	            	<p>As an undergraduate and graduate mechanical engineering student, I know the value of project-based courses aimed at building problem-solving, group interaction, and communication skills.</p>
+	          	</div>
+	        </div>
+    		<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate fadeInUp ftco-animated">
+    					<span class="date">2014</span>
+    					<h2>C</h2>
+    					<span class="position">National Central University</span>
+    					<p class="mt-4">My biggest C programming project was completed as an undergraduate. After constructing a breadboard circuit, I used C to control an electrical system that included LED 7-segment displays to indicate numbers of images according to my instructor's requirements, as well as to track a self-propelled vehicle. This task required several hundred lines of code. It was my first project involving skills from several different topic areas. The sense of fulfillment I felt gave me the first thoughts that I might want to pursue professional-level knowledge in the dual fields of mechanical and software engineering.</p>
+    				</div>
+    				<div class="resume-wrap ftco-animate fadeInUp ftco-animated">
+    					<span class="date">2018</span>
+    					<h2>Numeric Analysis</h2>
+    					<span class="position">National Central University</span>
+    					<p class="mt-4">As the leader of a group working on a theory-focused project in a Numeric Analysis course, I was responsible for organizing input from my classmates and preparing it for presentations. This task required strong negotiation proficiency. Also, as I mentioned in my online application form, I served as the organizer and captain of a department basketball team as an undergraduate. In this position I had to assess the strengths of each player and use my observations to create a teamwork mentality. This is where I developed strong communication skills.</p>
+    				</div>
+    				<div class="resume-wrap ftco-animate fadeInUp ftco-animated">
+    					<span class="date">2019</span>
+    					<h2>Object-Oriented Programming</h2>
+    					<span class="position">National Central University</span>
+    					<p class="mt-4">I used Java as a tool in a graduate-level Data Structure and Algorithms course at NTU. I had to complete 12 homework assignments, each one requiring several hundred lines of code and knowledge of Java's algorithm sorting function. These assignments, which reflected real-world engineering graph problems, required the visualization of concepts such as convex hulls and particle collisions. Afterwards, I applied the principles I learned to construct individual parts for some simple games-for example, a collision detection routine for bouncing balls against walls or moving blocks. </p>
+    				</div>
+    				
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate fadeInUp ftco-animated">
+    					<span class="date">2017</span>
+    					<h2>MATLAB</h2>
+    					<span class="position">National Central University</span>
+    					<p class="mt-4">My first MATLAB experience was for an undergraduate project developing a mechanism for placing materials in precise positions to meet manufacturing process requirements. I learned about balancing software and hardware guidelines, and discovered that solutions that seem optimal on paper might not work in real-world conditions. The project made me excited about code, but I had to focus on my major. After graduating I spent time developing programming skills via online courses sponsored by Udemy, Harvard ("Introductory CS50"), and Princeton ("Algorithms"). </p>
+    				</div>
+    				
+    				<div class="resume-wrap ftco-animate fadeInUp ftco-animated">
+    					<span class="date">2018-2019</span>
+    					<h2>IBUS</h2>
+    					<span class="position">National Taiwan University</span>
+    					<p class="mt-4">One project, involving a driverless electric car, is aimed at a 2020 competition to be held in Dubai. My responsibility is helping design a comfortable and safe suspension system. As the largest project I have ever worked on, it is challenging my ability to use engineering software. In addition, for my thesis work I am assisting with a project optimizing electric transit bus efficiency using different combinations of motors, transmissions, and batteries. For both projects I am using the MATLAB programming language. Since cars have multiple components, I need to consider how the functions I'm responsible for fit in with all other functions. In other words, I need to think in system terms.</p>
+    				</div>
+    				
+    				<div class="resume-wrap ftco-animate fadeInUp ftco-animated">
+    					<span class="date">2019</span>
+    					<h2>Global Innovation</h2>
+    					<span class="position">National Taiwan University</span>
+    					<p class="mt-4">I enrolled in the course "Principles and Practices of Global Innovation". Other than traditional courses whose participants have similar backgrounds and academic-related courses that use exams to assess student learning outcome. This course emphasized the importance of cross-cultural interactions in developing innovative products and business ideas in our rapidly globalizing world. I attended lectures that use videoconferencing technology to facilitate live interactions with classmates around the world. Participating the globally virtual teams to exchange perspectives and working collaboratively for innovative projects. This course gave me opportunity to collaborate with students from top-ranking universities, such as USC from United State, Aachen University in Germany, KAIST from South Korea, Peking University and Jiao-Tong University from China. 
+						</p>
+    				</div>
+    			</div>
+    		</div>
+    		
+    	</div>
+    </section>
+
+    <section class="section section--large section--centered section--grey section--in-view" id="more">
+        <div class="section__container">
+            <div class="container">
+            	<div class="row justify-content-center pb-5">
+	          	<div class="col-md-10 heading-section text-center ftco-animate fadeInUp ftco-animated">
+	          		<h1 class="big big-2">More</h1>
+	            
+	            	
+	          	</div>
+	        </div>
+                <div class="section__content section__content--animated">
+                    <ol class="grid grid--spaced grid--centered | features">
+                        <li class="grid__item grid__item--6-12-bp2 grid__item--3-12-bp3 | feature feature--blue feature--1">
+                            
+                            <span class="icon icon--feature icon--tutor | feature__icon"></span>
+                            <h2 class="gamma | feature__heading">TUTOR</h2>
+                            <div class="feature__text">For the past five years I've been a tutor for students preparing for their entrance exams. One positive part of that job is that I need to come up with ways of explaining complex ideas. That will help me when I need to explain research results.</div>
+                        </li>
+                        <li class="grid__item grid__item--6-12-bp2 grid__item--3-12-bp3 | feature feature--blue feature--2">
+                            
+                            <span class="icon icon--feature icon--yoga | feature__icon"></span>
+                            <h2 class="gamma | feature__heading">YOGA & SKETCH</h2>
+                            <div class="feature__text">"Yoga is the journey of the self, through the self, to the self."<br />Yoga and Sketch are what I do to release emotional tension in the body and to experience the healing that comes with this release</div>
+                        </li>
+                        <li class="grid__item grid__item--6-12-bp2 grid__item--3-12-bp3 | feature feature--blue feature--3">
+                            
+                            <span class="icon icon--feature icon--stock | feature__icon"></span>
+                            <h2 class="gamma | feature__heading">STOCK</h2>
+                            <div class="feature__text">Since I want to start my own business in the future, I invest some money in stock. It's a good way to create market awareness and sensitivity.</div>
+                        </li>
+                        <li class="grid__item grid__item--6-12-bp2 grid__item--3-12-bp3 | feature feature--blue feature--4">
+                            
+                            <span class="icon icon--feature icon--future | feature__icon"></span>
+                            <h2 class="gamma | feature__heading">FUTURE</h2>
+                            <div class="feature__text">I am proud of my engineering background, but my motivation is to start a business that provides maximum benefits to others. Sometimes I wonder if I can make a bigger impact on the lives of Taiwanese in the area of online education.</div>
+                        </li>
+
+                    </ol>
+                    <ol class="dreamSchool">
+	                    <div class="input-group input-group-lg">
+							<div class="input-group-prepend">
+							    <span class="input-group-text" id="inputGroup-sizing-lg">Life Style</span>
+							</div>
+							<input type="text" class="form-control typed-ct" aria-label="Large" aria-describedby="inputGroup-sizing-sm"  readonly="readonly">
+						</div>
+					</ol>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+
+
+	
+	<script src="js/typed.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
